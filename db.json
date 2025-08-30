@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "dfdgfgf",
+      "name": "The Bike guy 2",
+      "author": "Emma Moyers",
+      "price": "$ 66.00 USD",
+      "discount": "$ 59.00 USD",
+      "genre": ["Comedy", "Science Fiction", "Horror"],
+      "img": "./theBikeGuy2.png"
+    },
+    {
+      "id": "efdfdw",
+      "name": "The Bike guy",
+      "author": "Emma Moyers",
+      "price": "$ 59.99 USD",
+      "discount": "$ 49.99 USD",
+      "genre": ["Fiction", "Comedy", "Romance"],
+      "img": "./theBikeGuy.png"
+    },
+    {
+      "id": "dghdtyy",
+      "name": "Atomic love",
+      "author": "Selena Walls",
+      "price": "$ 34.99 USD",
+      "discount": "$ 29.99 USD",
+      "genre": ["Non Fiction", "Horror"],
+      "img": "./atomicLove.png"
+    },
+    {
+      "id": "wdsfdqw",
+      "name": "Its good on paper",
+      "author": "Patric Kim",
+      "price": "$ 99.99 USD",
+      "discount": "$ 89.99 USD",
+      "genre": ["Fiction", "Romance"],
+      "img": "./itsGoodOnPaper.png"
+    },
+    {
+      "id": "werfwxs",
+      "name": "Teachers Day",
+      "author": "Nathan August",
+      "price": "$ 11.99 USD",
+      "discount": "$ 9.99 USD",
+      "genre": ["Comedy", "Romance", "Science Fiction"],
+      "img": "./teachersDay.png"
+    },
+    {
+      "id": "hgfdffdf",
+      "name": "Atomic love",
+      "author": "David Jou",
+      "price": "$ 32.99 USD",
+      "discount": "$ 31.99 USD",
+      "genre": ["Adventure", "Romance"],
+      "img": "./aensithera.png"
+    },
+    {
+      "id": "hjgfgfgh",
+      "name": "The Bike guy 2",
+      "author": "Emma Moyers",
+      "price": "$ 34.99 USD",
+      "discount": "$ 89.99 USD",
+      "genre": ["Non Fiction", "Science Fiction", "Horror"],
+      "img": "./teachersDay.png"
+    },
+    {
+      "id": "jutrdfs",
+      "name": "The Azarin",
+      "author": "Boris Monn",
+      "price": "$ 106.99 USD",
+      "discount": "$ 89.99 USD",
+      "genre": ["Comedy", "Romance", "Horror"],
+      "img": "./theAzarin.png"
+    }
+  ]
+}

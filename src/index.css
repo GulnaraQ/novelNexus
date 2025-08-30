@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(../public/plus_jakarta_sans/static/PlusJakartaSans-Regular.ttf);
+}
+
+* {
+  font-family: PlusJakartaSans;
+}
+
+.active {
+  color: #008186;
+}
+
+i {
+  color: #d37643;
+  background-color: #fcf2dc;
+}
