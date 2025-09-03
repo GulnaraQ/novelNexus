@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: PlusJakartaSans;
   src: url(../public/plus_jakarta_sans/static/PlusJakartaSans-Regular.ttf);

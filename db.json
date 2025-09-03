@@ -1,5 +1,5 @@
 {
-  "users": [
+  "books": [
     {
       "id": "dfdgfgf",
       "name": "The Bike guy 2",
@@ -61,7 +61,7 @@
       "price": "$ 34.99 USD",
       "discount": "$ 89.99 USD",
       "genre": ["Non Fiction", "Science Fiction", "Horror"],
-      "img": "./teachersDay.png"
+      "img": "./realicticBook.png"
     },
     {
       "id": "jutrdfs",
@@ -71,6 +71,45 @@
       "discount": "$ 89.99 USD",
       "genre": ["Comedy", "Romance", "Horror"],
       "img": "./theAzarin.png"
+    }
+  ],
+
+  "authors": [
+    {
+      "id": "ertyius",
+      "name": "Margaret Atwood",
+      "category": "Literary Novelist",
+      "img": "./MargaretAtwood.jpg"
+    },
+    {
+      "id": "uhfgews",
+      "name": "Benjamin Roy",
+      "category": "Science fiction writer",
+      "img": "./BenjaminRoy.jpg"
+    },
+    {
+      "id": "adfegeh",
+      "name": "Stephen King",
+      "category": "Horror Writer",
+      "img": "./StephenKing.jpg"
+    },
+    {
+      "id": "ddettvfc",
+      "name": "Nellie Bidin",
+      "category": "Romantic Novelist",
+      "img": "./NellieBidin.jpg"
+    },
+    {
+      "id": "ytddgbv",
+      "name": "Toni Morrison",
+      "category": "Literary Novelist",
+      "img": "./ToniMorrison.jpg"
+    },
+    {
+      "id": "thvsvsg",
+      "name": "Jane Austen",
+      "category": "Classic Novelist",
+      "img": "./JaneAusten.jpg"
     }
   ]
 }

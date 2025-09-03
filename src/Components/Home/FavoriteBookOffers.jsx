@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const PopularBooks = () => {
+const FavoriteBookOffers = () => {
   const [books, setBooks] = useState([]);
 
   const url = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     axios.get(url + "/books").then(({ data }) => {
-      setBooks(data.slice(0, 4));
+      setBooks(data.slice(4, 8));
     });
   }, []);
 
@@ -21,10 +21,10 @@ const PopularBooks = () => {
   };
 
   return (
-    <div className="container mx-auto pt-[100px] pb-[50px] px-6">
-      <div className="flex justify-between items-center ">
-        <h2 className="text-3xl lg:text-5xl font-bold text-[#d37643]">
-          Our most popular books
+    <div className="container mx-auto px-6 py-[50px]">
+      <div className="flex justify-between items-end ">
+        <h2 className="text-3xl lg:text-5xl/[60px] w-[40%] font-bold text-[#d37643]">
+          Discover your next favorite book offers.
         </h2>
         <Link
           to="#"
@@ -72,4 +72,4 @@ const PopularBooks = () => {
   );
 };
 
-export default PopularBooks;
+export default FavoriteBookOffers;
