@@ -22,13 +22,13 @@ const Authors = () => {
   return (
     <div className="container mx-auto px-6 py-[50px] overflow-hidden">
       {/* Header */}
-      <div className="flex justify-between items-end">
+      <div className="flex flex-col gap-7 md:flex-row justify-between md:items-end">
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl lg:text-5xl/[60px] w-[50%] font-bold text-[#d37643]"
+          className="text-3xl lg:text-5xl/[60px] md:w-[50%] font-bold text-[#d37643]"
         >
           Discover the talented Authors Behind the Stories
         </motion.h2>

@@ -22,8 +22,8 @@ const FavoriteBookOffers = () => {
 
   return (
     <div className="container mx-auto px-6 py-[50px]">
-      <div className="flex justify-between items-end ">
-        <h2 className="text-3xl lg:text-5xl/[60px] w-[40%] font-bold text-[#d37643]">
+      <div className="flex flex-col gap-7 md:flex-row justify-between md:items-end ">
+        <h2 className="text-3xl lg:text-5xl/[60px] md:w-[40%] font-bold text-[#d37643]">
           Discover your next favorite book offers.
         </h2>
         <Link

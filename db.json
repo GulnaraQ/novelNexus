@@ -111,5 +111,49 @@
       "category": "Classic Novelist",
       "img": "./JaneAusten.jpg"
     }
+  ],
+  "blogs": [
+    {
+      "id": "nbvcfgh",
+      "img": "./blogImg1.jpg",
+      "title": "Trending Book Genres to Follow in 2024",
+      "name": "Henry Anderson",
+      "date": "August 20, 2024"
+    },
+    {
+      "id": "iuyuyy",
+      "img": "./blogImg2.jpg",
+      "title": "TBooks to Read Before Watching the Movie",
+      "name": "Henry Anderson",
+      "date": "August 21, 2024"
+    },
+    {
+      "id": "nbvcfgh",
+      "img": "./blogImg3.jpg",
+      "title": "Virtual Author Events to Watch This Month",
+      "name": "Henry Anderson",
+      "date": "August 22, 2024"
+    },
+    {
+      "id": "nbvcfgh",
+      "img": "./blogImg4.jpg",
+      "title": "Best For Fantasy Books in 2024",
+      "name": "Henry Anderson",
+      "date": "August 23, 2024"
+    },
+    {
+      "id": "nbvcfgh",
+      "img": "./blogImg5.jpg",
+      "title": "Behind the Scenes with Famous Writers",
+      "name": "Henry Anderson",
+      "date": "August 20, 2024"
+    },
+    {
+      "id": "nbvcfgh",
+      "img": "./blogImg6.jpg",
+      "title": "Upcoming Book Festivals You Should Attend",
+      "name": "Henry Anderson",
+      "date": "August 22, 2024"
+    }
   ]
 }
