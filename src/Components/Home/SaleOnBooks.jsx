@@ -20,7 +20,10 @@ const SaleOnBooks = () => {
           <h3 className="text-[20px] md:text-[25px] lg:text-[35px]/[45px] font-bold">
             Special sale on Featured books !
           </h3>
-          <Link className="bg-[#d37643] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95">
+          <Link
+            to="/book"
+            className="bg-[#d37643] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
+          >
             Shop now
           </Link>
         </div>
@@ -44,7 +47,10 @@ const SaleOnBooks = () => {
           <h3 className="text-[20px] md:text-[25px] lg:text-[35px]/[45px] font-bold text-[#008186]">
             Checkout for a discount up to 20%
           </h3>
-          <Link className="bg-[#008186] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95 hover:bg-[#d37643]">
+          <Link
+            to="/book"
+            className="bg-[#008186] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95 hover:bg-[#d37643]"
+          >
             Checkout now
           </Link>
           <div className="absolute right-[-25px] top-[-25px]">

@@ -25,7 +25,7 @@ const Header = () => {
         </p>
         <div className="flex gap-3">
           <Link
-            to="#"
+            to="/book"
             className="bg-[#d37643] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
           >
             Buy now

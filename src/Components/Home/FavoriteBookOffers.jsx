@@ -27,7 +27,7 @@ const FavoriteBookOffers = () => {
           Discover your next favorite book offers.
         </h2>
         <Link
-          to="#"
+          to="/book"
           className="text-center bg-[#d37643] w-fit px-6 py-2.5 text-[14px] md:text-[16px] text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
         >
           See all Book

@@ -1,6 +1,8 @@
 import Navbar from "./Components/Common/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Components/Pages/Home";
+import Home from "./Pages/Home";
+import Footer from "./Components/Common/Footer";
+import Book from "./Pages/Book";
 
 const App = () => {
   return (
@@ -8,7 +10,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/book" element={<Book />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
