@@ -5,7 +5,7 @@ body {
 }
 @font-face {
   font-family: PlusJakartaSans;
-  src: url(../public/plus_jakarta_sans/static/PlusJakartaSans-Regular.ttf);
+  src: url(../plus_jakarta_sans/static/PlusJakartaSans-Regular.ttf);
 }
 
 * {

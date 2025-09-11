@@ -48,7 +48,7 @@ const Books = () => {
 
       {/* Genres */}
       <motion.div
-        className="flex gap-4 justify-between w-fit mx-auto bg-[#f4e5c1] p-5 my-[50px]"
+        className="grid grid-cols-3 md:grid-cols-4 lg:flex gap-4 items-center justify-between w-fit mx-auto bg-[#f4e5c1] p-5 my-[50px]"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
