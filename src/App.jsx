@@ -5,6 +5,7 @@ import Footer from "./Components/Common/Footer";
 import Book from "./Pages/Book";
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/book" element={<Book />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
