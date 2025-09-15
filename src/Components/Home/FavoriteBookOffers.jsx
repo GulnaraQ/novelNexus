@@ -45,7 +45,7 @@ const FavoriteBookOffers = () => {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               className="p-5"
             >
-              <Link to={`books/${id}`}>
+              <Link to={`/book/${id}`}>
                 <img
                   src={img}
                   alt={name}

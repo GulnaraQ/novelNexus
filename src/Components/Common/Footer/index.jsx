@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-[50px] grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-10 border-b-1 border-b-[#ecaf8fac] justify-between">
         <div>
           <Link to="/">
-            <img src="./Footer_logo.svg" alt="logo" />
+            <img src="/Footer_logo.svg" alt="logo" />
           </Link>
           <p className="mt-7 mb-10 text-[#fcf2dc]">
             Velit venenatis mauris commodo malesuada pulvinar nunc. Purus

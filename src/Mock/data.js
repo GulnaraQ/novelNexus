@@ -55,3 +55,18 @@ export const question = [
       "Amet volutpat etiam faucibus sit. Habitant felis massa cras ipsum imperdiet est. Sit dolor posuere auctor varius orci sed.",
   },
 ];
+
+export const features = [
+  "Aliquam diam euismod vitae arcu ac pretium nascetur et.",
+  "Sapien facilisis cursus ullamcorper justo.",
+  "Nunc nunc dui nulla dictumst quis mauris.",
+  "Habitant sit mollis mattis congue amet lacus diam duis. I",
+  "Psum pulvinar eget id ut vitae.",
+  "Morbi aliquet convallis urna vivamus ultrices velit tristique vivamus erat.",
+  "Aenean at bibendum viverra tellus cursus tincidunt aliquam duis.",
+  "Varius pretium ut augue augue.",
+  "Id blandit commodo sit dui diam eu porta egestas mattis.",
+  "Malesuada nunc odio accumsan arcu posuere mauris tortor eu nisl.",
+  "Vestibulum ut vitae morbi quam vitae maecenas vestibulum condimentum.",
+  "Varius a feugiat scelerisque mattis faucibus faucibus malesuada elementum.",
+];

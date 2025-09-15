@@ -89,7 +89,7 @@ const Books = () => {
             viewport={{ once: true }}
             custom={0.2 + i * 0.1}
           >
-            <Link to={`books/${id}`}>
+            <Link to={`/book/${id}`}>
               <img
                 src={img}
                 alt={name}
