@@ -50,7 +50,7 @@ const Posts = () => {
                     <p className="text-gray-400 text-[14px] mt-1">{date}</p>
                   </div>
                   <div className="flex gap-3 items-center font-semibold text-[#098489] duration-300 hover:gap-2">
-                    <Link to="#">Read more</Link> <FaArrowRight />
+                    <Link to={`/blog/${id}`}>Read more</Link> <FaArrowRight />
                   </div>
                 </div>
               </div>

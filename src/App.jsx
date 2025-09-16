@@ -8,6 +8,7 @@ import BookDetails from "./Pages/BookDetails";
 import Layout from "./Pages/Layout";
 import NotFound from "./Pages/NotFound";
 import ScrollToTop from "./Components/Common/ScrollToTop";
+import BlogDetails from "./Pages/BlogDetails";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="book/:id" element={<BookDetails />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:id" element={<BlogDetails />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>

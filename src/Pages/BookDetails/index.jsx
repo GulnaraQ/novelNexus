@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import BookSlider from "../../Components/BookDetail/BookSlider";
-import KeyFeatures from "../../Components/BookDetail/KeyFeatures";
+import BookSlider from "../../Components/BookDetails/BookSlider";
+import KeyFeatures from "../../Components/BookDetails/KeyFeatures";
 import FavoriteBookOffers from "../../Components/Home/FavoriteBookOffers";
 
 const BookDetails = () => {
