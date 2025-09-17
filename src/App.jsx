@@ -9,6 +9,8 @@ import Layout from "./Pages/Layout";
 import NotFound from "./Pages/NotFound";
 import ScrollToTop from "./Components/Common/ScrollToTop";
 import BlogDetails from "./Pages/BlogDetails";
+import Author from "./Pages/Author";
+import AuthorDetails from "./Pages/AuthorDetails";
 
 const App = () => {
   return (
@@ -23,6 +25,9 @@ const App = () => {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<BlogDetails />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/author" element={<Author />} />
+          <Route path="/author/:id" element={<AuthorDetails />} />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

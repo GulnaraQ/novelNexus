@@ -15,12 +15,12 @@ const Authors = () => {
 
   useEffect(() => {
     axios.get(url + "/authors").then(({ data }) => {
-      setAuthors(data.slice(0, 4));
+      setAuthors(data);
     });
   }, []);
 
   return (
-    <div className="container mx-auto px-6 py-[50px] overflow-hidden">
+    <div className="container mx-auto px-6 pt-[100px] pb-[40px] overflow-hidden">
       {/* Header */}
       <div className="flex flex-col gap-7 md:flex-row justify-between md:items-end">
         <motion.h2
@@ -28,29 +28,15 @@ const Authors = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl lg:text-5xl/[60px] md:w-[50%] font-bold text-[#d37643]"
+          className="text-3xl lg:text-5xl/[60px] md:w-[60%] capitalize text-center mx-auto font-bold text-[#d37643]"
         >
           Discover the talented Authors Behind the Stories
         </motion.h2>
-
-        <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <Link
-            to="/author"
-            className="text-center bg-[#d37643] w-fit px-6 py-2.5 text-[14px] md:text-[16px] text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
-          >
-            See all author
-          </Link>
-        </motion.div>
       </div>
 
       {/* Authors grid */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {authors?.map(({ id, name, category, img }, index) => (
+        {authors?.map(({ id, name, category, img }) => (
           <motion.div
             key={id}
             initial={{ y: 50, opacity: 0 }}
@@ -60,7 +46,7 @@ const Authors = () => {
             className="bg-[#008186] text-[#f1e2bf] flex flex-col justify-center items-center px-7 py-12 
                        transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-2xl group"
           >
-            <Link to="#" className="overflow-hidden rounded-full">
+            <Link to={`/author/${id}`} className="overflow-hidden rounded-full">
               <img
                 src={img}
                 alt={name}
