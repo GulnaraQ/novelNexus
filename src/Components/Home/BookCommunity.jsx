@@ -27,7 +27,8 @@ const BookCommunity = () => {
           />
           <input
             type="submit"
-            value="Subscribe"
+            value="Submit"
+            required
             className="text-center bg-[#d37643] w-fit px-6 py-2.5 text-[14px] md:text-[16px] text-white font-semibold duration-300 hover:opacity-75 hover:scale-95 cursor-pointer"
           />
         </div>
@@ -36,7 +37,7 @@ const BookCommunity = () => {
         </p>
       </motion.div>
 
-      {/* Right side (image with hover text) */}
+      {/* Right side */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

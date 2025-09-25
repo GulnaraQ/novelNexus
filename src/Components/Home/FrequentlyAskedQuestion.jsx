@@ -17,7 +17,7 @@ const FrequentlyAskedQuestion = () => {
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12">
-        {/* Sol sütun */}
+        {/* left */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -60,7 +60,7 @@ const FrequentlyAskedQuestion = () => {
           })}
         </motion.div>
 
-        {/* Sağ sütun */}
+        {/* right */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

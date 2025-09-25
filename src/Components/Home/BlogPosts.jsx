@@ -36,7 +36,7 @@ const BlogPosts = () => {
           viewport={{ once: true }}
         >
           <Link
-            to=""
+            to="/blog"
             className="text-center bg-[#d37643] w-fit px-6 py-2.5 text-[14px] md:text-[16px] text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
           >
             Browse all
@@ -58,7 +58,7 @@ const BlogPosts = () => {
               <img src={img} alt={name} />
               <div className="p-4">
                 <Link
-                  to="#"
+                  to={`blog/${id}`}
                   className="font-semibold text-[20px] text-[#098489]"
                 >
                   {title}

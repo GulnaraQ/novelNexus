@@ -14,14 +14,14 @@ const BookDetails = () => {
     axios.get(url).then(({ data }) => {
       setBook(data);
     });
-  }, [id]);
+  }, [url]);
 
   if (!book) return <p>Loading...</p>;
 
   return (
     <div className="container mx-auto px-6 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-7 justify-between border-b-1 border-[#b8b4b4]">
-        <BookSlider />
+        <BookSlider image={book.img} />
         <div className="px-3">
           <h2 className="text-2xl lg:text-[40px] font-bold mb-4 text-[#d37643]">
             {book.name}

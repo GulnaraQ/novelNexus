@@ -31,7 +31,7 @@ const Header = () => {
             Buy now
           </Link>
           <Link
-            to="#"
+            to="/about"
             className="flex gap-2 items-center w-fit px-6 py-2.5 text-[#008186] font-semibold duration-300 hover:gap-3 hover:bg-white hover:opacity-75 hover:scale-95"
           >
             Read more <FaArrowRight />

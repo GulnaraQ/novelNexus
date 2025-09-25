@@ -17,7 +17,7 @@ const AuthorInfo = () => {
     axios.get(url).then(({ data }) => {
       setAuthor(data);
     });
-  }, []);
+  }, [id]);
   return (
     <div className="container mx-auto px-6 lg:w-[80%] m-auto py-[100px]">
       <div className="bg-[#008186]  grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 p-10">

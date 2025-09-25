@@ -1,11 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import { MdLocalGroceryStore } from "react-icons/md";
 import { LiaBarsSolid, LiaTimesSolid } from "react-icons/lia";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  // Body scroll block açıq menyuda
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showMobileMenu]);
+
+  const navLinkClass = ({ isActive }) =>
+    isActive ? "text-[#d37643]" : "hover:text-[#d37643]";
 
   return (
     <div className="z-30 sticky top-0 bg-[#fcf2dc]">
@@ -19,29 +31,62 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-[#826a59] font-semibold">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/book">Shop</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/" className={navLinkClass}>
+            Home
+          </NavLink>
+          <NavLink to="/book" className={navLinkClass}>
+            Shop
+          </NavLink>
+          <NavLink to="/about" className={navLinkClass}>
+            About
+          </NavLink>
+          <NavLink to="/blog" className={navLinkClass}>
+            Blog
+          </NavLink>
         </div>
 
-        {/* Mobile Menu (AnimatePresence) */}
+        {/* Mobile Menu */}
         <AnimatePresence>
           {showMobileMenu && (
             <motion.div
               initial={{ y: -200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -200, opacity: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
+              transition={{ type: "spring", stiffness: 120, damping: 15 }}
               className="fixed md:hidden top-[70px] left-0 right-0 bg-[#f4e5c1] py-[25px] text-[#826a59] font-semibold shadow-lg z-10"
             >
               <div className="container mx-auto px-6 flex flex-col gap-3">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/book">Shop</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
+                <NavLink
+                  to="/"
+                  className={navLinkClass}
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/book"
+                  className={navLinkClass}
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  Shop
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={navLinkClass}
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  className={navLinkClass}
+                  onClick={() => setShowMobileMenu(false)}
+                >
+                  Blog
+                </NavLink>
                 <Link
                   to="/book"
+                  onClick={() => setShowMobileMenu(false)}
                   className="bg-[#d37643] w-fit px-6 py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95"
                 >
                   Buy now

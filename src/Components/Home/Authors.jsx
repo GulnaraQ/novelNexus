@@ -60,7 +60,7 @@ const Authors = () => {
             className="bg-[#008186] text-[#f1e2bf] flex flex-col justify-center items-center px-7 py-12 
                        transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-2xl group"
           >
-            <Link to="#" className="overflow-hidden rounded-full">
+            <Link to={`/author/${id}`} className="overflow-hidden rounded-full">
               <img
                 src={img}
                 alt={name}

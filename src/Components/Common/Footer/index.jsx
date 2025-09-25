@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -72,7 +72,7 @@ const Footer = () => {
                 <Link to="#">Book Details</Link>
               </li>
               <li>
-                <Link to="#">Author</Link>
+                <Link to="/author">Author</Link>
               </li>
               <li>
                 <Link to="#">Author Details</Link>
@@ -92,7 +92,7 @@ const Footer = () => {
                 <Link to="#">Licenses</Link>
               </li>
               <li>
-                <Link to="#">404 page</Link>
+                <Link to="/NotFound">404 page</Link>
               </li>
               <li>
                 <Link to="#">Password</Link>
