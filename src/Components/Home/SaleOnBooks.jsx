@@ -1,11 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const SaleOnBooks = () => {
   return (
     <div className="container mx-auto px-6 py-[50px] grid grid-cols-1 lg:grid-cols-2 gap-7 justify-between">
-      {/* Sol tərəf - scroll zamanı yuxarıdan gəlsin */}
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +30,6 @@ const SaleOnBooks = () => {
         </div>
       </motion.div>
 
-      {/* Sağ tərəf - scroll zamanı aşağıdan gəlsin */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -11,12 +11,16 @@ import { motion } from "framer-motion";
 
 const Authors = () => {
   const [authors, setAuthors] = useState([]);
-  const url = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(url + "/authors").then(({ data }) => {
-      setAuthors(data);
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        if (data.authors) {
+          setAuthors(data.authors);
+        }
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   return (

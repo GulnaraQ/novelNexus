@@ -6,18 +6,20 @@ import { motion } from "framer-motion";
 const PopularBooks = () => {
   const [books, setBooks] = useState([]);
 
-  const url = import.meta.env.VITE_BACKEND_URL;
-
   useEffect(() => {
-    axios.get(url + "/books").then(({ data }) => {
-      setBooks(data.slice(0, 4));
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        if (data.books) {
+          setBooks(data.books.slice(0, 4));
+        }
+      })
+      .catch((err) => console.error(err));
   }, []);
 
-  // Animasiya variantları
   const cardVariants = {
-    hidden: { opacity: 0, y: 80 }, // aşagidan
-    visible: { opacity: 1, y: 0 }, // normal vəziyyət
+    hidden: { opacity: 0, y: 80 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (

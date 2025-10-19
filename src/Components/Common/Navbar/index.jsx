@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  // Body scroll block açıq menyuda
   useEffect(() => {
     if (showMobileMenu) {
       document.body.style.overflow = "hidden";
@@ -16,8 +15,7 @@ const Navbar = () => {
     }
   }, [showMobileMenu]);
 
-  const navLinkClass = ({ isActive }) =>
-    isActive ? "text-[#d37643]" : "hover:text-[#d37643]";
+  const navLinkClass = ({ isActive }) => isActive && "text-[#008186]";
 
   return (
     <div className="z-30 sticky top-0 bg-[#fcf2dc]">

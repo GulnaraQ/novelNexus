@@ -13,7 +13,6 @@ const Sponsors = () => {
   return (
     <div className="bg-[#008186] text-[#fcf2dc] py-[70px] lg:py-[100px] overflow-hidden">
       <div className="container mx-auto px-6 text-center">
-        {/* h2 animasiya ilə yuxarıdan */}
         <motion.h2
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +23,6 @@ const Sponsors = () => {
           Appreciating sponsors who foster reading
         </motion.h2>
 
-        {/* box-lar animasiya ilə aşağıdan */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-10">
           {sponsors?.map(({ img, title }, index) => (
             <motion.div

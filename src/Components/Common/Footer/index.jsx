@@ -4,6 +4,7 @@ import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { Link, useParams } from "react-router-dom";
 
 const Footer = () => {
+  const { id } = useParams();
   return (
     <div className="bg-[#d37643] pt-[50px] text-white">
       <div className="container mx-auto px-6 py-[50px] grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-10 border-b-1 border-b-[#ecaf8fac] justify-between">

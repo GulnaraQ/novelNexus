@@ -11,12 +11,16 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const AuthorInfo = () => {
   const [author, setAuthor] = useState({});
   const { id } = useParams();
-  const url = import.meta.env.VITE_BACKEND_URL + "/authors/" + id;
 
   useEffect(() => {
-    axios.get(url).then(({ data }) => {
-      setAuthor(data);
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        const foundAuthor = data.authors.find((item) => item.id === id);
+
+        setAuthor(foundAuthor);
+      })
+      .catch((err) => console.error(err));
   }, [id]);
   return (
     <div className="container mx-auto px-6 lg:w-[80%] m-auto py-[100px]">

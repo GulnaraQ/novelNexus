@@ -4,7 +4,6 @@ const AboutUs = () => {
   return (
     <div className="container mx-auto px-6 py-[70px] lg:py-[100px] overflow-hidden">
       <div className="lg:w-[50%] mx-auto text-center">
-        {/* h1 və p eyni vaxtda yuxarıdan gəlir */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +21,6 @@ const AboutUs = () => {
       </div>
 
       <div className="mt-10">
-        {/* Şəkil animasiya ilə aşağıdan */}
         <motion.img
           src="./aboutUs.jpg"
           alt="aboutUs"

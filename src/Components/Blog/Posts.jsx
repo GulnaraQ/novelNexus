@@ -8,12 +8,16 @@ const Posts = () => {
   const blogCategory = ["All blog", "Trends", "Event", "Authors"];
   const [blogs, setBlogs] = useState([]);
   const [activeCategory, setActiveCategory] = useState("All blog");
-  const url = import.meta.env.VITE_BACKEND_URL + "/blogs";
 
   useEffect(() => {
-    axios.get(url).then(({ data }) => {
-      setBlogs(data);
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        if (data.blogs) {
+          setBlogs(data.blogs);
+        }
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   // FILTER

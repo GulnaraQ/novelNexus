@@ -6,13 +6,16 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 const BookBlog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState({});
-  const url = import.meta.env.VITE_BACKEND_URL + "/blogs/" + id;
 
   useEffect(() => {
-    axios.get(url).then(({ data }) => {
-      setBlog(data);
-    });
-  }, []);
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        const foundBlog = data.blogs.find((item) => item.id === id);
+        setBlog(foundBlog);
+      })
+      .catch((err) => console.error(err));
+  }, [id]);
 
   return (
     <div className="container mx-auto px-6 pt-[100px] pb-[50px] ">

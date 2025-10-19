@@ -18,15 +18,15 @@ const Books = () => {
   const [books, setBooks] = useState([]);
   const [activeGenre, setActiveGenre] = useState("All");
 
-  const url = import.meta.env.VITE_BACKEND_URL + "/books";
-
   useEffect(() => {
-    axios.get(url).then(({ data }) => {
-      setBooks(data);
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        setBooks(data.books);
+      })
+      .catch((err) => console.error(err));
   }, []);
 
-  // FadeUp variantı (aşağıdan yuxarı)
   const fadeUp = {
     hidden: { opacity: 0, y: 60 },
     visible: (delay = 0) => ({
@@ -44,24 +44,22 @@ const Books = () => {
 
   return (
     <div className="container mx-auto px-6 py-[100px]">
-      {/* Başlıq */}
       <motion.h1
         className="font-bold text-5xl text-center text-[#d37643]"
         variants={fadeUp}
         initial="hidden"
         animate="visible"
-        custom={0} // ilk çıxan
+        custom={0}
       >
         Discover your next favorite book offers.
       </motion.h1>
 
-      {/* Genres */}
       <motion.div
         className="grid grid-cols-3 md:grid-cols-4 lg:flex gap-4 items-center justify-between w-fit mx-auto bg-[#f4e5c1] p-5 my-[50px]"
         variants={fadeUp}
         initial="hidden"
         animate="visible"
-        custom={0.2} // başlıqdan bir az sonra çıxsın
+        custom={0.2}
       >
         {genres.map((genre, index) => (
           <button
@@ -76,14 +74,13 @@ const Books = () => {
         ))}
       </motion.div>
 
-      {/* Books */}
       <motion.div
         key={activeGenre}
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-10 justify-between mt-[50px]"
         variants={fadeUp}
         initial="hidden"
         animate="visible"
-        custom={0.3} // book grid daha sonra çıxsın
+        custom={0.3}
       >
         {filteredBooks.length > 0 ? (
           filteredBooks.map(({ id, img, name, author, price, discount }, i) => (
@@ -93,11 +90,10 @@ const Books = () => {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              custom={0.4 + i * 0.1} // hər kitab ardıcıl çıxsın
+              custom={0.4 + i * 0.1}
             >
               <div>
                 <Link to={`/book/${id}`}>
-                  {" "}
                   <img
                     src={img}
                     alt={name}

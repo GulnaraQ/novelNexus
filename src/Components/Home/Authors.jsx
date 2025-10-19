@@ -11,24 +11,27 @@ import { motion } from "framer-motion";
 
 const Authors = () => {
   const [authors, setAuthors] = useState([]);
-  const url = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(url + "/authors").then(({ data }) => {
-      setAuthors(data.slice(0, 4));
-    });
+    axios
+      .get("/db.json")
+      .then(({ data }) => {
+        if (data.authors) {
+          setAuthors(data.authors.slice(0, 4));
+        }
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   return (
     <div className="container mx-auto px-6 py-[50px] overflow-hidden">
-      {/* Header */}
       <div className="flex flex-col gap-7 md:flex-row justify-between md:items-end">
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl lg:text-5xl/[60px] md:w-[50%] font-bold text-[#d37643]"
+          className="text-3xl lg:text-5xl/[60px] md:w-[65%] font-bold text-[#d37643]"
         >
           Discover the talented Authors Behind the Stories
         </motion.h2>
@@ -48,7 +51,6 @@ const Authors = () => {
         </motion.div>
       </div>
 
-      {/* Authors grid */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {authors?.map(({ id, name, category, img }, index) => (
           <motion.div
