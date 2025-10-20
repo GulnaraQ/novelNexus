@@ -24,7 +24,8 @@ const PopularBooks = () => {
 
   return (
     <div className="container mx-auto pt-[100px] pb-[50px] px-6">
-      <div className="flex justify-between items-center ">
+      {/* title */}
+      <div className="flex flex-col md:flex-row justify-between md:items-center gap-7">
         <h2 className="text-3xl lg:text-5xl font-bold text-[#d37643]">
           Our most popular books
         </h2>
@@ -36,6 +37,7 @@ const PopularBooks = () => {
         </Link>
       </div>
 
+      {/* books */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-10 justify-between mt-[50px]">
         {books?.map(({ id, img, name, author, price, discount }, i) => {
           return (
@@ -47,24 +49,29 @@ const PopularBooks = () => {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               className="p-5"
             >
-              <Link to={`/book/${id}`}>
+              <Link
+                to={`/book/${id}`}
+                className="flex flex-col justify-between"
+              >
                 <img
                   src={img}
                   alt={name}
                   className="w-[90%] mx-auto duration-500 hover:scale-110"
                 />
-                <h3 className="font-semibold text-[20px] text-[#008186] mt-5">
-                  {name}
-                </h3>
-                <h4 className="text-[#826a59] text-[15px] mt-2">{author}</h4>
-                <p className="font-bold text-[20px] lg:text-[25px] text-[#db804f] my-3">
-                  {discount}
-                </p>
-                <p className="text-[#9b9a98] line-through">{price}</p>
+                <div>
+                  <h3 className="font-semibold text-[20px] text-[#008186] mt-5">
+                    {name}
+                  </h3>
+                  <h4 className="text-[#826a59] text-[15px] mt-2">{author}</h4>
+                  <p className="font-bold text-[20px] lg:text-[25px] text-[#db804f] my-3">
+                    {discount}
+                  </p>
+                  <p className="text-[#9b9a98] line-through">{price}</p>
 
-                <button className="bg-[#d37643] mt-5 w-full py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95">
-                  Add to Card
-                </button>
+                  <button className="bg-[#d37643] mt-5 w-full py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95">
+                    Add to Card
+                  </button>
+                </div>
               </Link>
             </motion.div>
           );

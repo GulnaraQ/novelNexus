@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { powerfulFeatures } from "../../Mock/data";
 
 const Features = () => {
   return (
     <div className="container mx-auto px-6 py-[50px]">
+      {/* title */}
       <motion.h2
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -22,29 +24,22 @@ const Features = () => {
           viewport={{ once: true }}
           className="flex flex-col justify-between md:flex-row lg:flex-col gap-10 lg:gap-20"
         >
-          <div>
-            <img src="./bestQuality.svg" alt="bestQuality" />
-            <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
-              Best quality
-            </h3>
-            <p className="text-[#8b7463] font-medium">
-              Interdum est tortor sodales facilisis nulla. Turpis sapien neque
-              id ac tortor. Nunc nunc et ut neque.
-            </p>
-          </div>
-          <div>
-            <img src="./SimpletoMaster.svg" alt="SimpletoMaster" />
-            <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
-              Simple to Master
-            </h3>
-            <p className="text-[#8b7463] font-medium">
-              Quam tincidunt erat phasellus faucibus. Ipsum congue fermentum
-              nulla urna sed. Pretium leo diam eu lectus.
-            </p>
-          </div>
+          {powerfulFeatures
+            .slice(0, 2)
+            .map(({ img, alt, title, description }, index) => {
+              return (
+                <div key={index}>
+                  <img src={img} alt={alt} />
+                  <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
+                    {title}
+                  </h3>
+                  <p className="text-[#8b7463] font-medium">{description}</p>
+                </div>
+              );
+            })}
         </motion.div>
 
-        {/* orta box */}
+        {/* image box */}
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -66,26 +61,19 @@ const Features = () => {
           viewport={{ once: true }}
           className="flex flex-col justify-between md:flex-row lg:flex-col gap-10 lg:gap-20"
         >
-          <div>
-            <img src="./manuscriptStyle.svg" alt="manuscriptStyle" />
-            <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
-              Manuscript Style
-            </h3>
-            <p className="text-[#8b7463] font-medium">
-              Morbi et ultrices aliquam at. Purus enim arcu vitae mauris donec
-              aliquam a sed. Urna nunc gravida nunc eget in.
-            </p>
-          </div>
-          <div>
-            <img src="./FastandWelcoming.svg" alt="FastandWelcoming" />
-            <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
-              Fast and Welcoming
-            </h3>
-            <p className="text-[#8b7463] font-medium">
-              Odio morbi semper mauris vel id ipsum imperdiet. Duis habitant
-              lorem volutpat fringilla sagittis purus amet dui pharetra.
-            </p>
-          </div>
+          {powerfulFeatures
+            .slice(2, 4)
+            .map(({ img, alt, title, description }, index) => {
+              return (
+                <div key={index}>
+                  <img src={img} alt={alt} />
+                  <h3 className="text-[#d37643] text-[20px] font-semibold mt-7 mb-3">
+                    {title}
+                  </h3>
+                  <p className="text-[#8b7463] font-medium">{description}</p>
+                </div>
+              );
+            })}
         </motion.div>
       </div>
     </div>

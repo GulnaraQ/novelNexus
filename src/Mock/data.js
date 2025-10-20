@@ -56,7 +56,7 @@ export const question = [
   },
 ];
 
-export const features = [
+export const keyFeatures = [
   "Aliquam diam euismod vitae arcu ac pretium nascetur et.",
   "Sapien facilisis cursus ullamcorper justo.",
   "Nunc nunc dui nulla dictumst quis mauris.",
@@ -69,4 +69,82 @@ export const features = [
   "Malesuada nunc odio accumsan arcu posuere mauris tortor eu nisl.",
   "Vestibulum ut vitae morbi quam vitae maecenas vestibulum condimentum.",
   "Varius a feugiat scelerisque mattis faucibus faucibus malesuada elementum.",
+];
+
+export const powerfulFeatures = [
+  {
+    img: "./bestQuality.svg",
+    alt: "bestQuality",
+    title: "Best quality",
+    description:
+      "Interdum est tortor sodales facilisis nulla. Turpis sapien neque id ac tortor. Nunc nunc et ut neque.",
+  },
+  {
+    img: "./SimpletoMaster.svg",
+    alt: "SimpletoMaster",
+    title: "Simple to Master",
+    description:
+      "Quam tincidunt erat phasellus faucibus. Ipsum congue fermentum nulla urna sed. Pretium leo diam eu lectus.",
+  },
+  {
+    img: "./manuscriptStyle.svg",
+    alt: "manuscriptStyle",
+    title: "Manuscript Style",
+    description:
+      "Morbi et ultrices aliquam at. Purus enim arcu vitae mauris donec aliquam a sed. Urna nunc gravida nunc eget in.",
+  },
+  {
+    img: "./FastandWelcoming.svg",
+    alt: "FastandWelcoming",
+    title: "Fast and Welcoming",
+    description:
+      "Odio morbi semper mauris vel id ipsum imperdiet. Duis habitant lorem volutpat fringilla sagittis purus amet dui pharetra.",
+  },
+];
+
+export const blogSections = [
+  {
+    title: "Multiverse Fiction",
+    text: `Tellus nam sit diam sem. Ut lacinia egestas amet aliquet. Eleifend
+    fringilla at convallis nibh ultrices. Quis sit libero tincidunt
+    adipiscing pharetra bibendum quis malesuada sed. Venenatis sed nulla
+    bibendum laoreet at malesuada mauris fermentum integer. Sed eu odio
+    semper risus lobortis. Amet id sit orci lobortis orci. Condimentum
+    venenatis turpis vulputate elit eu nulla lectus nec quam.`,
+  },
+  {
+    title: "Cozy Mysteries",
+    text: `Venenatis sed nulla bibendum laoreet at malesuada mauris fermentum
+    integer. Sed eu odio semper risus lobortis. Amet id sit orci lobortis
+    orci. Condimentum venenatis turpis vulputate elit eu nulla lectus nec
+    quam.`,
+    list: [
+      "Suscipit lacus pulvinar quis maecenas mattis at in sed dignissim.",
+      "Viverra augue habitant dictumst tempus posuere dolor dapibus.",
+      "Sed magna eu fringilla posuere pellentesque.",
+      "Congue justo volutpat pharetra sit neque diam risus lobortis arcu.",
+      "Bibendum sit netus neque posuere cras tempus.",
+      "Faucibus ultricies nulla et dapibus pellentesque mattis.",
+      "Ornare amet in ornare lectus pulvinar erat congue velit.",
+    ],
+    afterList: `Sed eu odio semper risus lobortis. Amet id sit orci lobortis orci.
+    Condimentum venenatis turpis vulputate elit eu nulla lectus nec quam.`,
+  },
+  {
+    title: "Young Adult (YA) Fantasy",
+    text: `Ut lacinia egestas amet aliquet. Eleifend fringilla at convallis nibh
+    ultrices. Quis sit libero tincidunt adipiscing pharetra bibendum quis
+    malesuada sed. Venenatis sed nulla bibendum laoreet at malesuada mauris
+    fermentum integer. Sed eu odio semper risus lobortis. Amet id sit orci
+    lobortis orci. Condimentum venenatis turpis vulputate elit eu nulla
+    lectus nec quam.`,
+  },
+  {
+    title: "Impact on User Experience",
+    text: `Eleifend fringilla at convallis nibh ultrices. Quis sit libero
+    tincidunt adipiscing pharetra bibendum quis malesuada sed. Venenatis sed
+    nulla bibendum laoreet at malesuada mauris fermentum integer. Sed eu
+    odio semper risus lobortis. Amet id sit orci lobortis orci. Condimentum
+    venenatis turpis vulputate elit eu nulla lectus nec quam.`,
+  },
 ];

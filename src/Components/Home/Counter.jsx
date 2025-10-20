@@ -9,11 +9,11 @@ const Counter = () => {
           <motion.div
             key={index}
             className="flex gap-5 items-center"
-            initial={{ opacity: 0, y: 50 }} // aşagıdan başlasın
-            animate={{ opacity: 1, y: 0 }} // yuxarı qalxsın
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.6,
-              delay: index * 0.3, // soldan sağa ardıcıl effekt
+              delay: index * 0.3,
               ease: "easeOut",
             }}
           >

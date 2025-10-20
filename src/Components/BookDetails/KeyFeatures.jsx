@@ -1,4 +1,4 @@
-import { features } from "../../Mock/data";
+import { keyFeatures } from "../../Mock/data";
 
 const KeyFeatures = ({ author }) => {
   return (
@@ -22,7 +22,7 @@ const KeyFeatures = ({ author }) => {
           ullamcorper massa aliquam commodo.
         </p>
         <ul className="list-disc list-inside space-y-1">
-          {features.map((feature, index) => {
+          {keyFeatures.map((feature, index) => {
             return <li key={index}>{feature}</li>;
           })}
         </ul>

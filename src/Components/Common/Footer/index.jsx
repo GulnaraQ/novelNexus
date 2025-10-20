@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-between">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 justify-between">
           <div className="text-[#fcf2dc] font-medium">
             <h3 className="font-semibold text-[20px] text-white">Main page</h3>
             <ol className="mt-6 flex flex-col gap-4">
@@ -44,9 +44,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="#">FAQ page</Link>
               </li>
             </ol>
           </div>
@@ -77,29 +74,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="#">Author Details</Link>
-              </li>
-            </ol>
-          </div>
-
-          <div className="text-[#fcf2dc] font-medium">
-            <h3 className="font-semibold text-[20px] text-white">
-              Utility page
-            </h3>
-            <ol className="mt-6 flex flex-col gap-4">
-              <li>
-                <Link to="#">Style guide</Link>
-              </li>
-              <li>
-                <Link to="#">Licenses</Link>
-              </li>
-              <li>
-                <Link to="/NotFound">404 page</Link>
-              </li>
-              <li>
-                <Link to="#">Password</Link>
-              </li>
-              <li>
-                <Link to="#">Changelog</Link>
               </li>
             </ol>
           </div>

@@ -38,6 +38,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
+
       <div>
         <img src="./winwinStrategyBook.webp" alt="winwinStrategyBook" />
       </div>

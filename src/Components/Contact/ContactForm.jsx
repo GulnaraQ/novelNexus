@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
@@ -28,7 +27,7 @@ const ContactForm = () => {
           <div className="flex gap-7 mt-10">
             <img src="/phoneIcon.svg" alt="phoneIcon" />
             <div className="flex flex-col gap-3">
-              <h4 className="font-semibold  lg:text-[20px]">Phone-</h4>
+              <h4 className="font-semibold  lg:text-[20px]">Phone -</h4>
               <a href="tel:(926) 551-0997 x8688">
                 (926) 551-0997 x8688 <br />
                 275.625.5628 x1326{" "}
@@ -40,7 +39,7 @@ const ContactForm = () => {
           <div className="flex gap-7 mt-10">
             <img src="/mailIcon.svg" alt="mailIcon" />
             <div className="flex flex-col">
-              <h4 className="font-semibold lg:text-[20px] mb-3">Mail-</h4>
+              <h4 className="font-semibold lg:text-[20px] mb-3">Mail -</h4>
               <a href="mailto:Angela_Mohr@hotmail.com">
                 Angela_Mohr@hotmail.com
               </a>
@@ -54,7 +53,7 @@ const ContactForm = () => {
           <div className="flex gap-7 mt-10">
             <img src="/locationIcon.svg" alt="locationIcon" />
             <div className="flex flex-col gap-3">
-              <h4 className="font-semibold lg:text-[20px]">Address-</h4>
+              <h4 className="font-semibold lg:text-[20px]">Address -</h4>
               <a href="#">782 Harrison Avenue, East Providence 15215-4458</a>
             </div>
           </div>
