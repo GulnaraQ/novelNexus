@@ -28,7 +28,7 @@ const Posts = () => {
 
   return (
     <div className="container mx-auto px-6 py-[100px]">
-      {/* Başlıq */}
+      {/* title */}
       <motion.h1
         initial={{ y: -80, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -41,8 +41,8 @@ const Posts = () => {
 
       {/* Category Buttons */}
       <motion.div
-        className="flex gap-4 items-center justify-between w-fit mx-auto my-[50px]"
-        initial={{ x: 100, opacity: 0 }} // sağdan
+        className="flex flex-wrap gap-3 items-center justify-center w-fit mx-auto my-[50px]"
+        initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}

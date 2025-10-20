@@ -47,7 +47,7 @@ const PopularBooks = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.6, delay: i * 0.2 }}
-              className="p-5"
+              className="p-5 flex"
             >
               <Link
                 to={`/book/${id}`}

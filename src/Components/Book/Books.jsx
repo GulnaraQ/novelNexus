@@ -55,7 +55,7 @@ const Books = () => {
       </motion.h1>
 
       <motion.div
-        className="grid grid-cols-3 md:grid-cols-4 lg:flex gap-4 items-center justify-between w-fit mx-auto bg-[#f4e5c1] p-5 my-[50px]"
+        className="grid grid-cols-2 md:grid-cols-4 lg:flex gap-4 items-center justify-between w-fit mx-auto bg-[#f4e5c1] p-5 my-[50px]"
         variants={fadeUp}
         initial="hidden"
         animate="visible"
@@ -86,13 +86,13 @@ const Books = () => {
           filteredBooks.map(({ id, img, name, author, price, discount }, i) => (
             <motion.div
               key={id}
-              className="p-5"
+              className="p-5 flex"
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0.4 + i * 0.1}
             >
-              <div>
+              <div className="flex flex-col justify-between">
                 <Link to={`/book/${id}`}>
                   <img
                     src={img}
@@ -100,18 +100,20 @@ const Books = () => {
                     className="w-[90%] mx-auto duration-500 hover:scale-110"
                   />
                 </Link>
-                <h3 className="font-semibold text-[20px] text-[#008186] mt-5">
-                  {name}
-                </h3>
-                <h4 className="text-[#826a59] text-[15px] mt-2">{author}</h4>
-                <p className="font-bold text-[20px] lg:text-[25px] text-[#db804f] my-3">
-                  {discount}
-                </p>
-                <p className="text-[#9b9a98] line-through">{price}</p>
+                <div>
+                  <h3 className="font-semibold text-[20px] text-[#008186] mt-5">
+                    {name}
+                  </h3>
+                  <h4 className="text-[#826a59] text-[15px] mt-2">{author}</h4>
+                  <p className="font-bold text-[20px] lg:text-[25px] text-[#db804f] my-3">
+                    {discount}
+                  </p>
+                  <p className="text-[#9b9a98] line-through">{price}</p>
 
-                <button className="bg-[#d37643] mt-5 w-full py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95">
-                  Add to Cart
-                </button>
+                  <button className="bg-[#d37643] mt-5 w-full py-2.5 text-white font-semibold duration-300 hover:opacity-75 hover:scale-95">
+                    Add to Cart
+                  </button>
+                </div>
               </div>
             </motion.div>
           ))

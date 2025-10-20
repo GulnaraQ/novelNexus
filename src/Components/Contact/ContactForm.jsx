@@ -66,7 +66,7 @@ const ContactForm = () => {
           transition={{ duration: 0.8 }}
         >
           <form className="text-gray-700 text-[15px] flex flex-col gap-6">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
                 placeholder="Enter your first name:"
